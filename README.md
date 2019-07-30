@@ -3,11 +3,11 @@
 
 首先先建立以下table
 
---1.學生表
+1.學生表
 
 Student(SId,Sname,Sage,Ssex)
 
---SId 學生編號,Sname 學生姓名,Sage 出生年月,Ssex 學生性別
+SId 學生編號,Sname 學生姓名,Sage 出生年月,Ssex 學生性別
 ```
 create table Student(SId varchar(10),Sname varchar(10),Sage datetime,Ssex varchar(10));
 insert into Student values('01' , '趙雷' , '1990-01-01' , '男');
@@ -26,11 +26,11 @@ insert into Student values('13' , '孫七' , '2018-01-01' , '女')
 
 
 
---2.課程表
+2.課程表
 
 Course(CId,Cname,TId)
 
---CId 課程編號,Cname 課程名稱,TId 教師編號
+CId 課程編號,Cname 課程名稱,TId 教師編號
 ```
 create table Course(CId varchar(10),Cname nvarchar(10),TId varchar(10));
 insert into Course values('01' , '語文' , '02');
@@ -38,11 +38,11 @@ insert into Course values('02' , '數學' , '01');
 insert into Course values('03' , '英語' , '03')
 ```
 
---3.教師表
+3.教師表
 
 Teacher(TId,Tname)
 
---TId 教師編號,Tname 教師姓名
+TId 教師編號,Tname 教師姓名
 ```
 create table Teacher(TId varchar(10),Tname varchar(10));
 insert into Teacher values('01' , '張三');
@@ -50,11 +50,11 @@ insert into Teacher values('02' , '李四');
 insert into Teacher values('03' , '王五')
 ```
 
---4.成績表
+4.成績表
 
 SC(SId,CId,score)
 
---SId 學生編號,CId 課程編號,score 分數
+SId 學生編號,CId 課程編號,score 分數
 ```
 create table SC(SId varchar(10),CId varchar(10),score decimal(18,1));
 insert into SC values('01' , '01' , 80);
@@ -77,7 +77,7 @@ insert into SC values('07' , '02' , 89);
 insert into SC values('07' , '03' , 98)
 ```
 
-#練習題目
+# 練習題目
 
 1. 查詢" 01 "課程比" 02 "課程成績高的學生的信息及課程分數
 
